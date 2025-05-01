@@ -13,5 +13,5 @@ and understanding the data used by Lineage 2.
 
 ## Recommended software
 
-- Liberica JDK 21
+- Liberica JDK 24
 - Eclipse IDE for Java Developers
