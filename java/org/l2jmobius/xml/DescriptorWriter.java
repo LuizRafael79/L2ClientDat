@@ -44,7 +44,7 @@ public class DescriptorWriter
 {
 	private static final Logger LOGGER = Logger.getLogger(DescriptorWriter.class.getName());
 	
-	private static final byte[] END_FILE_BYTES = new byte[]
+	private static final byte[] END_FILE_BYTES =
 	{
 		12,
 		83,

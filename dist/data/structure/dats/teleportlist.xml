@@ -76,7 +76,7 @@
 			<node name="unk4" reader="USHORT" />
 			<node name="unk5" reader="USHORT" />
 			<node name="unk6" reader="UBYTE" />
-			<node name="unk7" reader="USHORT" />
+			<node name="tp_group" reader="USHORT" />
 		</for>
 	</file>
 </list>

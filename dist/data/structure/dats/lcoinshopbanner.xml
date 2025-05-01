@@ -34,4 +34,15 @@
 			</for>
 		</for>
 	</file>
+	<file pattern="OrcVillage" isSafePackage="true">
+		<node name="data" reader="CNTR" />
+		<for name="banner" size="#data" hidden="false">
+			<node name="TextureName" reader="MAP_INT" />
+			<node name="LinkURL" reader="ASCF" />
+			<node name="unk502" reader="CNTR" />
+			<for name="unk502" size="#unk502" hidden="true">
+				<node name="unk" reader="UINT" />
+			</for>
+		</for>
+	</file>
 </list>

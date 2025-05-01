@@ -44,4 +44,46 @@
 			</for>
 		</for>
 	</file>
+   <file pattern="ShieldOfKingdom" isSafePackage="true">
+        <node name="data" reader="UINT" />
+        <for name="cardselect_stage" size="#data" hidden="false">
+            <node name="card_count" reader="USHORT" />
+            <node name="type" reader="UBYTE" />
+			<node name="card_quality" reader="UBYTE" />
+            <node name="normal_effect" reader="UINT" />
+            <node name="special_effect" reader="USHORT" />
+        </for>
+        <node name="data1" reader="UINT" />
+        <for name="cardselect_stage_effect" size="#data1" hidden="false">
+            <node name="effect_type" reader="USHORT" />
+            <node name="target_item" reader="CNTR" />
+            <for name="target_item" size="#target_item">
+                <node name="id1" reader="UINT" />
+                <node name="id2" reader="USHORT" />
+                <node name="type1" reader="UBYTE" />
+            </for>
+        </for>
+    </file>
+    <file pattern="Superion" isSafePackage="true">
+        <node name="data" reader="UINT" />
+        <for name="cardselect_stage" size="#data" hidden="false">
+            <node name="card_count" reader="USHORT" />
+            <node name="type" reader="UBYTE" />
+			<node name="card_quality" reader="UBYTE" />
+            <node name="normal_effect" reader="UINT" />
+            <node name="special_effect" reader="USHORT" />
+        </for>
+        <node name="data1" reader="UINT" />
+        <for name="cardselect_stage_effect" size="#data1" hidden="false">
+            <node name="effect_type" reader="USHORT" />
+            <node name="unk_493" reader="UINT" />
+            <node name="target_item" reader="CNTR" />
+            <for name="target_item" size="#target_item">
+                <node name="id1" reader="UINT" />
+                <node name="id2" reader="USHORT" />
+                <node name="type1" reader="UBYTE" />
+            </for>
+        </for>
+        <node name="data2" reader="UINT" />
+    </file>
 </list>

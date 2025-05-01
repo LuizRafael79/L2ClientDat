@@ -76,4 +76,12 @@
 			<node name="yaw" reader="FLOAT" />
 		</for>
 	</file>
+	<file pattern="OrcVillage" isSafePackage="true">
+		<for name="LogPawn" size="95" hidden="false">
+			<node name="x" reader="FLOAT" />
+			<node name="y" reader="FLOAT" />
+			<node name="z" reader="FLOAT" />
+			<node name="yaw" reader="FLOAT" />
+		</for>
+	</file>
 </list>

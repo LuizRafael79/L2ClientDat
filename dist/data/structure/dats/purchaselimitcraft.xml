@@ -321,7 +321,7 @@
 
 			<node name="category" reader="UCHAR" />
 			<node name="category_sub" reader="UINT" />
-			<wrapper name="unk">
+			<wrapper name="max_buy_qty">
 				<node name="mark_type" reader="UBYTE" />
 				<node name="max_buy_count" reader="UCHAR" />
 			</wrapper>

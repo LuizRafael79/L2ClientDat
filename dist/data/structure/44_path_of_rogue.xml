@@ -133,7 +133,7 @@
 	<link pattern="mable_game(_Classic(Aden)?)?-[\w]+\.dat" file="mable_game" version="Homunculus" />
 	<link pattern="mable_game_event(_Classic(Aden)?)?-[\w]+\.dat" file="mable_game_event" version="Homunculus" />
 	<link pattern="mantleexception.dat" file="mantleexception" version="Helios" />
-	<link pattern="MinimapRegion(_Classic(Aden)?)?.dat" file="minimapregion" version="GrandCrusade" />
+	<link pattern="MinimapRegion(_Classic(Aden)?)?.dat" file="minimapregion" version="PathOfRogue" />
 	<link pattern="MissionLevel(_Classic(Aden)?)?.dat" file="missionlevel" version="PathOfRogue" />
 	<link pattern="MobSkillAnimgrp(_Classic(Aden)?)?.dat" file="mobskillanimgrp" version="Helios" />
 	<link pattern="MonsterBook_client.dat" file="monsterbook_client" version="GrandCrusade" />

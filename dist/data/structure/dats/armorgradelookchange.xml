@@ -44,4 +44,24 @@
 			</for>
 		</for>
 	</file>
+	<file pattern="OrcVillage" isSafePackage="true">
+        <node name="data" reader="UINT" />
+        <for name="ArmorGradeLookChange" size="#data" hidden="false">
+            <node name="Class" reader="MAP_INT" />
+            <node name="ChangeByGrade" reader="UINT" enum_name="grade_type" />
+            <node name="ChangeByChestID" reader="CNTR" />
+            <for name="ChangeByChestID" size="#ChangeByChestID">
+                <node name="ChangeByChestID_" reader="UINT" />
+            </for>
+            <node name="ArmorID" reader="CNTR" />
+            <for name="ArmorID" size="#ArmorID">
+                <node name="ArmorID_" reader="UINT" />
+            </for>
+            <node name="BackID" reader="UINT" />
+            <node name="EffectSetID" reader="CNTR" />
+            <for name="EffectSetID" size="#EffectSetID">
+                <node name="EffectSetID_" reader="UINT" />
+            </for>
+        </for>
+    </file>
 </list>

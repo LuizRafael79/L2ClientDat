@@ -73,4 +73,19 @@
 			-->
 		</for>
 	</file>
+	<file pattern="Superion" isSafePackage="true">
+        <node name="data" reader="UINT" />
+        <for name="variationdata_option" size="#data" hidden="false">
+			<write name="\r\n" />
+			<node name="mineral_item_id" reader="UINT" />
+			<node name="item_group_name" reader="UINT" />
+			<write name="\r\n" />
+			<node name="desc_1" reader="ASCF" />
+			<write name="\r\n" />
+			<node name="desc_2" reader="ASCF" />
+			<write name="\r\n" />
+			<node name="desc_3" reader="ASCF" />
+			<write name="\r\n\r\n" />
+        </for>
+    </file>
 </list>

@@ -27,7 +27,7 @@
 	<link pattern="BlessOption(_Classic(Aden)?)?.dat" file="blessoption" version="MasterClass3" />
 	<link pattern="CardCollectData(_Classic)?-[\w]+\.dat" file="cardcollectdata" version="EtinasFate" />
 	<link pattern="cardselect(_Classic(Aden)?)?.dat" file="cardselect" version="Shinemaker" />
-	<link pattern="cardselect_stage(_Classic)?-[\w]+\.dat" file="cardselect_stage" version="PathOfRogue" />
+	<link pattern="cardselect_stage(_Classic)?-[\w]+\.dat" file="cardselect_stage" version="ShieldOfKingdom" />
 	<link pattern="Castlename(_Classic)?-[\w]+\.dat" file="castlename" version="GrandCrusade" />
 	<link pattern="CharacterAbility(_Classic(Aden)?)?-[\w]+\.dat" file="characterability" version="MasterClass" />
 	<link pattern="CharacterInitialStatExData.dat" file="characterinitialstatexdata" version="Salvation" />
@@ -133,7 +133,7 @@
 	<link pattern="mable_game(_Classic(Aden)?)?-[\w]+\.dat" file="mable_game" version="Homunculus" />
 	<link pattern="mable_game_event(_Classic(Aden)?)?-[\w]+\.dat" file="mable_game_event" version="Homunculus" />
 	<link pattern="mantleexception.dat" file="mantleexception" version="Helios" />
-	<link pattern="MinimapRegion(_Classic(Aden)?)?.dat" file="minimapregion" version="GrandCrusade" />
+	<link pattern="MinimapRegion(_Classic(Aden)?)?.dat" file="minimapregion" version="PathOfRogue" />
 	<link pattern="MissionLevel(_Classic(Aden)?)?.dat" file="missionlevel" version="PathOfRogue" />
 	<link pattern="MobSkillAnimgrp(_Classic(Aden)?)?.dat" file="mobskillanimgrp" version="Helios" />
 	<link pattern="MonsterBook_client.dat" file="monsterbook_client" version="GrandCrusade" />
@@ -155,12 +155,12 @@
 	<link pattern="optiondata_client(_Classic(Aden)?)?-[\w]+\.dat" file="optiondata_client" version="ScionsOfDestiny" />
 	<link pattern="PawnAnimData(_Classic)?.dat" file="pawnanimdata" version="Helios" />
 	<link pattern="Pet_Extract(_Classic(Aden)?)?.dat" file="petextract" version="Homunculus2" />
-	<link pattern="PetAcquireSkill(_Classic(Aden)?)?.dat" file="petacquireskill" version="Homunculus2" />
+	<link pattern="PetAcquireSkill(_Classic(Aden)?)?.dat" file="petacquireskill" version="ShieldOfKingdom" />
 	<link pattern="PetAction_Classic(Aden)?.dat" file="petaction" version="Homunculus" />
 	<link pattern="PetEvolve_Classic(Aden)?.dat" file="petevolve" version="Homunculus" />
 	<link pattern="PetLook_Classic(Aden)?-[\w]+\.dat" file="petlook" version="Homunculus" />
 	<link pattern="PetName_Classic(Aden)?-[\w]+\.dat" file="petname" version="Homunculus" />
-	<link pattern="PetRaceEmblem_Classic(Aden)?-[\w]+\.dat" file="petraceemblem" version="ReturnOfTheQueenAnt" />
+	<link pattern="PetRaceEmblem_Classic(Aden)?-[\w]+\.dat" file="petraceemblem" version="ShieldOfKingdom" />
 	<link pattern="PIAgreement-[\w]+\.dat" file="piagreement" version="Valiance" />
 	<link pattern="PledgeCrestPreset_Classic(Aden)?.dat" file="pledgecrestpreset" version="TheSourceOfFlame" />
 	<link pattern="PledgeLevel(_Classic(Aden)?)?-[\w]+\.dat" file="pledgelevel" version="MasterClass" />
@@ -184,7 +184,8 @@
 	<link pattern="recipe-c.dat" file="recipe-c" version="Lindvior" />
 	<link pattern="relics_collection(_Classic(Aden)?)?-[\w]+\.dat" file="relicscollection" version="Shinemaker" />
 	<link pattern="relics_main(_Classic(Aden)?)?.dat" file="relicsmain" version="ShieldOfKingdom" />
-	<link pattern="relics_playdata(_Classic(Aden)?)?.dat" file="relicsplaydata" version="ShieldOfKingdom" />
+	<link pattern="relics_playdata.dat" file="relicsplaydata" version="ShieldOfKingdom" />
+	<link pattern="relics_playdata_ClassicAden.dat" file="relicsplaydata" version="ShieldOfKingdom_Vulcan" />
 	<link pattern="ReplaceSkillIcon(_Classic(Aden)?)?.dat" file="replaceskillicon" version="AgeOfMagic" />
 	<link pattern="RideData(_Classic(Aden)?)?.dat" file="ridedata" version="PathOfRogue" />
 	<link pattern="sceneplayerdata.dat" file="sceneplayerdata" version="Helios" />
