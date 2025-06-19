@@ -245,6 +245,6 @@
 			</for>
 			<node name="commission" reader="LONG" />
 			<node name="unk" reader="UBYTE" />
-        </for>
-    </file>
+		</for>
+	</file>
 </list>

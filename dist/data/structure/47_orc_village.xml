@@ -219,8 +219,8 @@
 	<link pattern="TimeZoneData(_Classic(Aden)?)?-[\w]+\.dat" file="timezonedata" version="PathOfRogue" />
 	<link pattern="TransformData(_Classic(Aden)?)?.dat" file="transformdata" version="Helios" />
 	<link pattern="TutorialName(_Classic)?-[\w]+\.dat" file="tutorialname" version="Salvation" />
-	<link pattern="UpgradeSystem(_Classic)?.dat" file="upgradesystem" version="OrcVillage" />
-	<link pattern="UpgradeSystem_Normal(_Classic(Aden)?)?.dat" file="upgradesystem_normal" version="OrcVillage" />
+	<link pattern="UpgradeSystem(_Classic)?.dat" file="upgradesystem" version="EtinasFate" />
+	<link pattern="UpgradeSystem_Normal(_Classic(Aden)?)?.dat" file="upgradesystem_normal" version="ShieldOfKingdom" />
 	<link pattern="UseCountItem(_Classic(Aden)?)?.dat" file="usecountitem" version="Salvation" />
 	<link pattern="usmmoviedata-[\w]+\.dat" file="usmmoviedata" version="Awakening" />
 	<link pattern="variationdata_fee(_Classic(Aden)?)?.dat" file="variationdata_fee" version="ShieldOfKingdom" />
