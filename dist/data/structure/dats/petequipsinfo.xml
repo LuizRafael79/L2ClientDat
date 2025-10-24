@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<file pattern="OrcVillage_Essence" isSafePackage="true">
+	<node name="total_records" reader="UINT" />
+	        <for name="pet_equip_info" size="#total_records" hidden="false">
+	        
+	            <node name="pet_id" reader="UINT" />
+	            <node name="const_group_1" reader="UINT" />
+	            <node name="const_group_2" reader="UINT" />
+	            
+			<node name="slot_count" reader="CNTR" />
+			<node name="unknown_header_field" reader="UINT" />
+			
+			<for name="slot" size="#slot_count" hidden="true">
+			    <node name="val_1" reader="UINT" />
+			    <node name="val_2" reader="UINT" />
+			    <node name="stat_1_float" reader="FLOAT" />
+			    <node name="stat_2_float" reader="FLOAT" />
+			    <node name="slot_index" reader="UINT" />
+			    <node name="val_3" reader="UINT" />
+			</for>    
+            
+	        </for>
+	    </file>
+</list>

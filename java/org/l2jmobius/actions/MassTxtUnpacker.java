@@ -74,7 +74,7 @@ public class MassTxtUnpacker extends ActionTask
 			return;
 		}
 		
-		final File[] files = baseDir.listFiles(pathname -> pathname.getName().toLowerCase().endsWith(".dat") || pathname.getName().toLowerCase().endsWith(".ini") || pathname.getName().toLowerCase().endsWith(".htm"));
+		final File[] files = baseDir.listFiles(pathname -> pathname.getName().toLowerCase().endsWith(".dat") || pathname.getName().toLowerCase().endsWith(".ini") || pathname.getName().toLowerCase().endsWith(".unr") || pathname.getName().toLowerCase().endsWith(".htm"));
 		if ((files == null) || (files.length == 0))
 		{
 			L2ClientDat.addLogConsole("Directory [" + _path + "] is empty.", true);
@@ -107,7 +107,7 @@ public class MassTxtUnpacker extends ActionTask
 					fis.read(head);
 					fis.close();
 					final String header = new String(head, StandardCharsets.UTF_16LE);
-					if (!header.matches("Lineage2Ver41[1-4]"))
+					if (!header.matches("Lineage2Ver41[1-4]") && (!header.matches("Lineage2Ver111")))
 					{
 						L2ClientDat.addLogConsole("[" + file.getName() + "] not encrypted. Skip decrypt.", true);
 					}

@@ -103,6 +103,7 @@ public class DatFile extends File
 					}
 				}
 				_buff = crypter.decryptResult();
+				
 			}
 			finally
 			{

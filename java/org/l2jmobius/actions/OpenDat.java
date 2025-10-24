@@ -208,16 +208,18 @@ public class OpenDat extends ActionTask
 		
 		double progress = actionTask.getCurrentProgress();
 		final DatCrypter crypter = getLastDatCrypter(file);
-		final String fileName = file.getName();
+		final String fileName = file.getName().toLowerCase();
 		String text = null;
-		if (fileName.contains(".ini") || fileName.contains(".txt"))
+		
+		// 🔸 Tipos de arquivo simples
+		if (fileName.endsWith(".ini") || fileName.endsWith(".txt"))
 		{
 			if (buffer.hasArray())
 			{
 				text = new String(buffer.array(), 0, buffer.array().length, StandardCharsets.UTF_8);
 			}
 		}
-		else if (fileName.contains(".htm"))
+		else if (fileName.endsWith(".htm"))
 		{
 			if (buffer.hasArray())
 			{
@@ -226,9 +228,17 @@ public class OpenDat extends ActionTask
 				{
 					return null;
 				}
-				
 				progress = actionTask.addProgress(progress, 99.0, weight);
 			}
+		}
+		else if (fileName.endsWith(".unr") || fileName.endsWith(".ukx") || fileName.endsWith(".usx") || fileName.endsWith(".uax") || fileName.endsWith(".uix"))
+		{
+			// 🔸 BYPASS ESPECIAL para arquivos binários Unreal (sem descriptor)
+			if (!mass)
+			{
+				L2ClientDat.addLogConsole("Loaded raw binary file (no descriptor): " + fileName, true);
+			}
+			text = "RAW FILE LOADED (binary Unreal data).";
 		}
 		else
 		{

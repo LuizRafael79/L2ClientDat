@@ -215,7 +215,7 @@
 	<link pattern="SysString(_Classic)?-[\w]+\.dat" file="sysstring" version="ScionsOfDestiny" />
 	<link pattern="SystemMsg(_Classic)?-[\w]+\.dat" file="systemmsg" version="TheSourceOfFlame" />
 	<link pattern="teleportlist(_Classic(Aden)?)?.dat" file="teleportlist" version="Superion" />
-	<link pattern="TimeZoneData(_Classic(Aden)?)?-[\w]+\.dat" file="timezonedata" version="PathOfRogue" />
+	<link pattern="TimeZoneData(_Classic(Aden)?)?-[\w]+\.dat" file="timezonedata" version="Superion" />
 	<link pattern="TransformData(_Classic(Aden)?)?.dat" file="transformdata" version="Helios" />
 	<link pattern="TutorialName(_Classic)?-[\w]+\.dat" file="tutorialname" version="Salvation" />
 	<link pattern="UpgradeSystem(_Classic)?.dat" file="upgradesystem" version="EtinasFate" />

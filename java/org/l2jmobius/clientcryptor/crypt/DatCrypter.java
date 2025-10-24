@@ -80,6 +80,7 @@ public abstract class DatCrypter
 	
 	public boolean checkFileExtension(String n)
 	{
+		
 		return n.contains(".") && _fileEndNames.contains(n.split("\\.")[1]);
 	}
 	

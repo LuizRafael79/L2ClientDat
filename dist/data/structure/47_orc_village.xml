@@ -162,6 +162,7 @@
 	<link pattern="PetAcquireSkill(_Classic(Aden)?)?.dat" file="petacquireskill" version="Superion" />
 	<link pattern="PetAction_Classic(Aden)?.dat" file="petaction" version="Homunculus" />
 	<link pattern="PetEvolve_Classic(Aden)?.dat" file="petevolve" version="Homunculus" />
+	<link pattern="PetEquipInfos(_Classic(Aden)?)?.dat" file="petequipsinfo" version="OrcVillage_Essence" />
 	<link pattern="PetLook_Classic(Aden)?-[\w]+\.dat" file="petlook" version="Homunculus" />
 	<link pattern="PetName_Classic(Aden)?-[\w]+\.dat" file="petname" version="Homunculus" />
 	<link pattern="PetRaceEmblem_Classic(Aden)?-[\w]+\.dat" file="petraceemblem" version="Superion" />
@@ -216,11 +217,11 @@
 	<link pattern="SysString(_Classic)?-[\w]+\.dat" file="sysstring" version="ScionsOfDestiny" />
 	<link pattern="SystemMsg(_Classic)?-[\w]+\.dat" file="systemmsg" version="TheSourceOfFlame" />
 	<link pattern="teleportlist(_Classic(Aden)?)?.dat" file="teleportlist" version="Superion" />
-	<link pattern="TimeZoneData(_Classic(Aden)?)?-[\w]+\.dat" file="timezonedata" version="PathOfRogue" />
+	<link pattern="TimeZoneData(_Classic(Aden)?)?-[\w]+\.dat" file="timezonedata" version="OrcVillage" />
 	<link pattern="TransformData(_Classic(Aden)?)?.dat" file="transformdata" version="Helios" />
 	<link pattern="TutorialName(_Classic)?-[\w]+\.dat" file="tutorialname" version="Salvation" />
-	<link pattern="UpgradeSystem(_Classic)?.dat" file="upgradesystem" version="EtinasFate" />
-	<link pattern="UpgradeSystem_Normal(_Classic(Aden)?)?.dat" file="upgradesystem_normal" version="ShieldOfKingdom" />
+	<link pattern="UpgradeSystem(_Classic)?.dat" file="upgradesystem" version="OrcVillage" />
+	<link pattern="UpgradeSystem_Normal(_Classic(Aden)?)?.dat" file="upgradesystem_normal" version="OrcVillage" />
 	<link pattern="UseCountItem(_Classic(Aden)?)?.dat" file="usecountitem" version="Salvation" />
 	<link pattern="usmmoviedata-[\w]+\.dat" file="usmmoviedata" version="Awakening" />
 	<link pattern="variationdata_fee(_Classic(Aden)?)?.dat" file="variationdata_fee" version="ShieldOfKingdom" />

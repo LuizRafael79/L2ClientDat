@@ -26,6 +26,7 @@ public class ConfigWindow
 {
 	private static final Logger LOGGER = Logger.getLogger(ConfigWindow.class.getName());
 	
+	public static String THEME_PREFERENCE;
 	public static String FILE_OPEN_CURRENT_DIRECTORY_UNPACK;
 	public static String FILE_OPEN_CURRENT_DIRECTORY_PACK;
 	public static String FILE_OPEN_CURRENT_DIRECTORY;
@@ -42,6 +43,7 @@ public class ConfigWindow
 		try
 		{
 			final PropertiesParser parser = new PropertiesParser("./config/config_window.ini");
+			THEME_PREFERENCE = parser.getString("THEME_PREFERENCE", "");
 			FILE_OPEN_CURRENT_DIRECTORY_UNPACK = parser.getString("FILE_OPEN_CURRENT_DIRECTORY_UNPACK", ".");
 			FILE_OPEN_CURRENT_DIRECTORY_PACK = parser.getString("FILE_OPEN_CURRENT_DIRECTORY_PACK", ".");
 			FILE_OPEN_CURRENT_DIRECTORY = parser.getString("FILE_OPEN_CURRENT_DIRECTORY", ".");
