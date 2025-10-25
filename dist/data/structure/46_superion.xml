@@ -170,7 +170,7 @@
 	<link pattern="PledgeLevelDesc-[\w]+\.dat" file="pledgeleveldesc" version="Salvation" />
 	<link pattern="PledgeMasteryInfo-[\w]+\.dat" file="pledgemasteryinfo" version="Salvation" />
 	<link pattern="PledgeMission-[\w]+\.dat" file="pledgemission" version="Salvation" />
-	<link pattern="PledgeShopProduct(_Classic(Aden)?)?-[\w]+\.dat" file="pledgeshopproduct" version="Shinemaker" />
+	<link pattern="PledgeShopProduct(_Classic(Aden)?)?-[\w]+\.dat" file="pledgeshopproduct" version="Superion" />
 	<link pattern="PopupEvent(_Classic(Aden)?)?.dat" file="popupevent" version="PathOfRogue" />
 	<link pattern="posteffectdata.dat" file="posteffectdata" version="Helios" />
 	<link pattern="PrisonData.dat" file="prisondata" version="MasterClass3" />

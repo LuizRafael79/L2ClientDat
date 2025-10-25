@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
-<project name="L2ClientDat" default="cleanup" basedir=".">
+<project name="L2ClientDat" default="adding-core" basedir=".">
 	<description>
 		This file is part of the L2ClientDat project.
 		
@@ -18,7 +18,7 @@
 		along with this program. If not, see [http://www.gnu.org/licenses/].
 	</description>
 
-	<property name="build" location="../build" />
+	<property name="build" location="build" />
 	<property name="build.bin" location="${build}/bin" />
 	<property name="build.dist" location="${build}/dist" />
 	<property name="build.dist.libs" location="${build.dist}/libs" />
@@ -42,12 +42,36 @@
 		<delete dir="${build.bin}" quiet="true" />
 		<mkdir dir="${build.bin}" />
 	</target>
+	
+	<target name="prepare-dist" depends="compile">
+	    <mkdir dir="${build.dist}" />
+	    <mkdir dir="${build.dist.libs}" />
 
-	<target name="compile" depends="init" description="Compile the source.">
-		<javac srcdir="${src}" destdir="${build.bin}" compiler="modern" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="24" target="24" encoding="UTF-8" />
+	    <copy todir="${build.dist}">
+	        <fileset dir="${dist}">
+	            <exclude name="**/org/l2jmobius/**"/>
+	            <exclude name="**/*.java"/>
+	        </fileset>
+	    </copy>
+
+	    <copy todir="${build.dist.libs}">
+	        <fileset dir="${build.dist.libs}">
+	            <include name="L2ClientDat.jar"/>
+	        </fileset>
+	    </copy>
 	</target>
 
-	<target name="jar" depends="compile" description="Create the jar files.">
+	<target name="compile" depends="init" description="Compile the source.">
+		<javac srcdir="${src}" destdir="${build.bin}" compiler="modern" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="24" target="24" encoding="UTF-8">
+	        <classpath>
+	            <fileset dir="${libs}">
+	                <include name="flatlaf-3.6.2.jar" />
+	            </fileset>
+	        </classpath>
+		</javac>
+	</target>
+
+	<target name="jar" depends="prepare-dist" description="Create the jar files.">
 		<tstamp>
 			<format property="time.stamp" pattern="yyyy-MM-dd HH:mm:ss z" />
 		</tstamp>
@@ -59,6 +83,7 @@
 				<attribute name="Build-Date" value="${time.stamp}" />
 				<attribute name="Implementation-URL" value="http://www.l2jmobius.org/" />
 				<attribute name="Main-Class" value="org.l2jmobius.L2ClientDat" />
+	            <attribute name="Class-Path" value="flatlaf-3.6.2.jar" />
 			</manifest>
 		</jar>
 	</target>
@@ -68,10 +93,7 @@
 	</target>
 
 	<target name="adding-dist" depends="adding-core" description="Updating the Zip file with distribution content.">
-		<zip destfile="${build}/L2ClientDat.zip" basedir="${dist}" excludes="**/*-sources.jar" update="true" level="9" />
+		<zip destfile="${build}/L2ClientDat.zip" basedir="${dist}" update="true" level="9" />
 	</target>
-
-	<target name="cleanup" depends="adding-dist" description="Cleaning the build folder.">
-		<delete dir="${build.dist}" />
-	</target>
+	
 </project>

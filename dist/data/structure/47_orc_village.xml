@@ -32,12 +32,14 @@
 	<link pattern="ChangeClass(_Classic(Aden)?)?\.dat" file="changeclass" version="OrcVillage" />
 	<link pattern="CharacterAbility(_Classic(Aden)?)?-[\w]+\.dat" file="characterability" version="MasterClass" />
 	<link pattern="CharacterInitialStatExData.dat" file="characterinitialstatexdata" version="Salvation" />
+	<link pattern="character_style(_Classic(Aden)?)?-[\w]+\.dat" file="characterstyle" version="OrcVillage" />
 	<link pattern="Charcreategrp(_Classic)?.dat" file="charcreategrp" version="OrcVillage" />
 	<link pattern="Chargrp(_Classic)?.dat" file="chargrp" version="PathOfRogue" />
 	<link pattern="CharHeadExgrp.dat" file="charheadexgrp" version="MasterClass3" />
 	<link pattern="ClassInfo(_Classic(Aden)?)?-[\w]+\.dat" file="classinfo" version="GrandCrusade" />
 	<link pattern="ClassTree(_Classic)?.dat" file="classtree" version="PreludeOfWar" />
 	<link pattern="ClassTreeDesc(_Classic)?-[\w]+\.dat" file="classtreedesc" version="PreludeOfWar" />
+	<link pattern="CloakLookChangeItem(_Classic)?.dat" file="cloaklookchangeitem" version="OrcVillage" />
 	<link pattern="collection(_Classic(Aden)?)?-[\w]+\.dat" file="collection" version="Superion" />
 	<link pattern="collectionmain(_Classic(Aden)?)?.dat" file="collectionmain" version="AgeOfMagic" />
 	<link pattern="colorexgrp.dat" file="colorexgrp" version="Valiance" />

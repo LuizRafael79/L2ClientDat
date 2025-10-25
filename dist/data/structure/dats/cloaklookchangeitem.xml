@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<file pattern="OrcVillage" isSafePackage="true">
+		
+<node name="total_records" reader="UINT" /> 
+		
+		<for name="record" size="#total_records" hidden="false">
+			
+			<node name="record_id" reader="UINT" /> 
+			
+			<wrapper name="long_record">
+				<node name="data_1" reader="UINT" />
+				<node name="data_2" reader="UINT" />
+				<node name="data_3" reader="UINT" />
+				<node name="data_4" reader="UINT" />
+				<node name="data_5" reader="UINT" />
+				<node name="data_6" reader="UINT" />
+				<node name="data_7" reader="UINT" />
+				<node name="data_8" reader="UINT" />
+				<node name="data_9" reader="UINT" />
+				<node name="data_10" reader="UINT" />
+				<node name="data_11" reader="UINT" />
+				<node name="data_12" reader="UINT" />
+				<node name="data_13" reader="UINT" />
+				<node name="data_14" reader="UINT" />
+				<node name="data_15" reader="UINT" />
+				<node name="data_16" reader="UINT" />
+				<node name="data_17" reader="UINT" />
+				<node name="data_18" reader="UINT" />
+			</wrapper>
+
+			<wrapper name="medium_record">
+				<node name="data_1" reader="UINT" />
+				<node name="data_2" reader="UINT" />
+				<node name="data_3" reader="UINT" />
+				<node name="data_4" reader="UINT" />
+			</wrapper>
+
+			<wrapper name="short_record">
+				</wrapper>
+			
+		</for>
+	</file>
+</list>

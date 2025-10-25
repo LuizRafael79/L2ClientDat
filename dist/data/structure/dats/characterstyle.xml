@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <file pattern="OrcVillage" isSafePackage="true">
+        <node name="total_records" reader="UINT" />
+
+        <for name="weapon_record" size="#total_records" hidden="false">
+            <!-- Campo ID (UINT 4 bytes) -->
+            <node name="id" reader="UINT" />
+
+            <!-- Nome do item (ASCF lê 2 bytes de length automaticamente) -->
+            <node name="name" reader="ASCF" />
+
+            <!-- Flag ou campo desconhecido (UBYTE) -->
+            <node name="flag1" reader="UBYTE" />
+
+            <!-- Campo 'a' separado em 4 bytes -->
+            <node name="a_byte_1" reader="UBYTE" />
+            <node name="a_byte_2" reader="UBYTE" />
+            <node name="a_byte_3" reader="UBYTE" />
+            <node name="a_byte_4" reader="UBYTE" />
+
+            <!-- Campo 'b' permanece UINT -->
+            <node name="b" reader="UINT" />
+
+            <!-- Campo 'c' separado em 4 bytes -->
+            <node name="c_byte_1" reader="UBYTE" />
+            <node name="c_byte_2" reader="UBYTE" />
+            <node name="c_byte_3" reader="UBYTE" />
+            <node name="c_byte_4" reader="UBYTE" />
+
+            <!-- 6 bytes consecutivos -->
+            <node name="byte_1" reader="UBYTE" />
+            <node name="byte_2" reader="UBYTE" />
+            <node name="byte_3" reader="UBYTE" />
+            <node name="byte_4" reader="UBYTE" />
+            <node name="byte_5" reader="UBYTE" />
+            <node name="byte_6" reader="UBYTE" />
+
+            <!-- Campo 'prop_03' separado em 4 bytes -->
+            <node name="prop_03_byte_1" reader="UBYTE" />
+            <node name="prop_03_byte_2" reader="UBYTE" />
+            <node name="prop_03_byte_3" reader="UBYTE" />
+            <node name="prop_03_byte_4" reader="UBYTE" />
+
+            <!-- Os dois UINTs finais permanecem -->
+            <node name="prop_04" reader="UINT" />
+            <node name="prop_05" reader="UINT" />
+        </for>
+
+        <!-- Início do próximo bloco, por exemplo 'kill effect', já separado -->
+        <for name="kill_effect_record" size="#total_records" hidden="false">
+            <node name="kill_effect_id" reader="UINT" />
+            <node name="kill_effect_name" reader="ASCF" />
+            <!-- Adicionar outros campos de kill effect conforme dump -->
+        </for>
+
+        <!-- Exemplo de 'name background' -->
+        <for name="name_background_record" size="#total_records" hidden="false">
+            <node name="background_id" reader="UINT" />
+            <node name="background_name" reader="ASCF" />
+            <!-- Outros campos específicos -->
+        </for>
+
+    </file>
+</list>
