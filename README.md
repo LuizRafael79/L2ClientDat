@@ -1,4 +1,5 @@
-# L2ClientDat Editor - L2jMobius Edition
+## Updated to procotol 542 (Closed Version) no ETA for Public Version
+# L2ClientDat Editor
 
 L2ClientDat is a tool designed for opening and saving Lineage 2 .dat files.<br>
 This software is intended to assist developers and players in managing, modifying,<br>
