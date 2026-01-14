@@ -5,20 +5,22 @@ If you enjoy this project and want to support its development, you can do so via
 
 [![Sponsor via GitHub](https://img.shields.io/badge/Sponsor-GitHub-181717?style=flat&logo=github)](https://github.com/sponsors/LuizRafael79)
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat&logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luizramicco@gmail.com&currency_code=BRL)
-# L2ClientDat Editor
+# L2ClientDat Editor 2.0
 
 L2ClientDat is a tool designed for opening and saving Lineage 2 .dat files.<br>
 This software is intended to assist developers and players in managing, modifying,<br>
 and understanding the data used by Lineage 2.
 
-
 ## Features
 
 - Open Lineage 2 .dat files.
+- Decrypt Lineage 2 (With a debug flag in config_debug.ini)
+- .u, .utx, .ukx, .usx, unr (all types)
 - Save modifications back to .dat format.
-
+- Autoupdate
+- More features comming soon
 
 ## Recommended software
 
-- Liberica JDK 24
+- Java SDK 25 or Liberica JDK
 - Eclipse IDE for Java Developers
